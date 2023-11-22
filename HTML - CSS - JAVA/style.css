@@ -1,0 +1,344 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    width: 100px;
+
+
+}
+
+.menu ul {
+    list-style: none;
+
+
+
+}
+
+.menu ul li {
+    display: inline-block;
+    margin: 0 40px;
+
+
+
+
+}
+
+.menu ul li a {
+    text-decoration: none;
+
+    padding: 7px 20px;
+    border-radius: 10px;
+
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5em;
+
+}
+.searct-box
+{
+    transform: translate(-50%,-50%);
+    background: #353b48;
+    height: 40px;
+}
+
+.menu ul li a:hover,
+.menu ul a.link-ativo {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+    border: 2px solid black;
+}
+
+section{
+    
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    
+}
+
+section div.back{
+
+    
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+}
+section div.back video{
+
+    
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
+
+
+}
+
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top-left-radius: 2px solid black;
+    border: 2px solid black;
+    padding: 1px 20px;
+    background-color: rgb(0, 0, 0, 0.4);
+    position: relative;
+
+}
+
+#homecontato {
+
+    background-image: url(./img/contato.webp);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-color: black;
+}
+
+#homeserviço {
+
+    background-image: url(./img/serviço.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-color: black;
+}
+
+#homesobre {
+
+    background-image: url(./img/logos-assassins-creed-.webp);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-color: black;
+}
+
+#homejogos {
+
+    background-image: url(./img/jogos.png);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-color: black;
+}
+
+
+#meuFormulario {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1px 750px;
+    width: 500px;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3.5em;
+    background-color: rgb(0, 0, 0, 0.5);
+
+
+}
+.container{
+    width: 1100px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color:white
+}
+.container .card{
+
+    width: 300px;
+    height: auto;
+    padding: 10px 0;
+    text-align: center;
+    background-color: rgb(0, 0, 0, 0.8);
+    border-radius: 15px;
+    box-shadow: 2px 5px 15px black;
+    transition: transform 0.3s;
+}
+
+.container .card:hover{
+    transform: scale(1.050);
+}
+
+.container .card .card-title{
+
+    padding: 30px 20px;
+
+    border-bottom: 2px solid gray;
+
+}
+
+.container .card .card-title h2{
+    font-size: 35px;
+    padding-bottom: 15px;
+    color: white;
+}
+
+.container .card .card-title p span {
+    font-size: 40px;
+    padding: 0 5px;
+}
+.container .card .card-content ul{
+
+    padding: 10px 30px;
+    padding-bottom: 20px;
+
+}
+
+.container .card .card-content ul li {
+
+    list-style: none;
+    padding: 10px 0;
+
+}
+
+.container .card .card-content ul li i{
+
+    margin-right: 4px;
+
+}
+.container .card .card-content button{
+
+    width: 120px;
+    padding: 10px 20px;
+    background: white;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: 0,3s;
+}
+
+.container .card .card-content button:hover{
+
+    background: #17aed9;
+    letter-spacing: 1.2px;
+
+
+}
+
+.container .card .card-content button a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+.containerslid{
+    position: relative;
+}
+.containerslid .slider-container .slide{
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    z-index: -1;
+
+}
+.containerslid .slider-container .slide video{
+    position: absolute;
+    top: 0;left: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    animation: fadeIn .4s linear;
+
+}
+@keyframes fadeIn{
+    0%{
+        transform: scale(1.5);
+    }
+}
+.containerslid .slider-container .slide .contentslid{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    background-color: rgba(0,0,0,0,7);
+    text-align: center;
+}
+.containerslid .slider-container .slide .contentslid h3{
+
+    font-size: 60px;
+    color: #fff;
+    text-shadow: 0 5px 10px rgba(0,0,0,.3);
+    animation: animate .4s linear .4s backwards;
+
+}
+.containerslid .slider-container .slide .contentslid p{
+
+    font-size: 15px;
+    color: #eee;
+    padding: 5px 0;
+    font-weight: lighter;
+    text-shadow: 0 5px 10px rgba(0,0,0,.3);
+    max-width: 700px;
+    animation: animate .4s linear .6s backwards;
+    
+}
+.containerslid .slider-container .slide .contentslid .btn{
+
+    display: inline-block;
+    padding: 9px 30px;
+    font-size: 17px;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,.3) ;
+    color: #333;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: .2 linear;
+    animation: animate .4s linear .1s backwards;
+}
+.containerslid .slider-container .slide .contentslid .btn:hover{
+
+    letter-spacing: 2px;
+}
+@keyframes animate{
+    0%{
+        opacity: 0;
+        transform: scale(.5) translateY(-50px);
+    }
+}
+.containerslid .slider-container{
+    display: none;
+}
+.containerslid .slider-container.active{
+    display: block;
+}
+.containerslid #next,
+.containerslid #prev{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-800%);
+    z-index: 100;
+    background: #fff;
+    color: #333;
+    font-weight: bold;
+    height: 60px;
+    width: 50px;
+    line-height: 55px;
+    font-size: 30px;
+    cursor: pointer;
+    text-align: center;
+}
+.containerslid #next{
+    right: 0;
+
+}
+.containerslid #prev{
+    left: 0;
+
+}
+
